@@ -257,15 +257,32 @@ ul.nav {
     background-color: white;
     border-radius: 10px;
     display: flex;
-    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 25px;
+    
+    margin-top:10px;
+}
+
+.side_box_grid {
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
     padding: 25px;
     margin-top:10px;
 }
 
-
+#trending_icon {
+    width: 50%;
+    object-fit: cover;
+}
 .grey_line {
-    border-bottom: solid 2px grey;
-    margin-bottom: 10px;
+    border-bottom: solid 2px rgba(128, 128, 128, 0.541);
+    padding-bottom: 15px;
 }
 
 
